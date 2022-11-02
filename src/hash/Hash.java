@@ -49,13 +49,11 @@ public class Hash {
     }
 
     public int largo() {
-
         return this.cantidad;
     }
 
     public boolean estaVacio() {
         return this.cantidad == 0;
-
     }
 
     private int fnhash(int dato) {
@@ -73,8 +71,7 @@ public class Hash {
     }
 
     private int fnhash(Persona p) {
-
-        System.out.println(p.hashCode() + " "  +Math.abs(p.hashCode()) % this.tope );
+        //System.out.println(p.hashCode() + " "  +Math.abs(p.hashCode()) % this.tope );
         return Math.abs(p.hashCode()) % this.tope;
     }
 
